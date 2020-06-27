@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+        <style>
+            .main{
+                background-color: #3A4655;
+                width: 400px;
+                margin: 1em auto;
+                /* border: 1px red solid; */
+                box-sizing: border-box;
+                overflow: hidden;
+            }
+            input{
+                width: 94%;
+                height: 150px !important;
+                padding: 0px 8px !important;
+                font-size: 40px;
+                text-align: right;
+                border: none;
+                background-color:#3A4655;
+                color: rgb(202, 202, 221);
+
+            }
+            input:focus{
+                outline: none;
+            }
+            .butt{
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(4 , 25%);
+                /* grid-gap: 1px; */
+            }
+            .but{
+                height: 60px;
+                /* border-radius: 1px; */
+                border: none;
+                background-color: #3A4655;
+                font-size: large;
+                outline: none;
+                color: white;
+                border: 1px solid gray;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="main">
+            <div class="input">
+                <input placeholder="0" class="result" id="result" type="text" name="" id="">
+            </div>
+            <div class="butt">
+                <button style="color: red; font-size: 30px; font-weight: bold;" class="but" onclick="Clear()">C</button>
+                <button style="color: rgb(176, 176, 218);"  class="but"  onclick="Back()">back</button>
+                <button style="color: rgb(176, 176, 218);"  class="but" onclick="square()">x<sup>2</sup></button>
+                <button style="color: rgb(176, 176, 218);"  class="but" onclick="press('/')">/</button>
+                <button  style="color: rgb(176, 176, 218);" class="but" onclick="factorial()">x!</button>
+                <button  style="color: rgb(176, 176, 218);" class="but" onclick="cube()">x<sup>3</sup></button>
+                <button style="color: rgb(176, 176, 218);"  class="but" onclick="sqrt()">√</button>
+                <button style="color: rgb(176, 176, 218);"  class="but" onclick="cubert()"><sup>3</sup>√</button>
+                <button style="color: rgb(176, 176, 218);" class="but" onclick="press('(')">(</button>
+                <button style="color: rgb(176, 176, 218);" class="but" onclick="press(')')">)</button>
+                <button style="color: rgb(176, 176, 218);" class="but" onclick="Mod()">abs</button>
+                <button style="color: rgb(176, 176, 218);" class="but" onclick="Pi()">π</button>
+            <button class="but" onclick="press('1')">1</button>
+            <button class="but" onclick="press('2')">2</button>
+            <button class="but" onclick="press('3')">3</button>
+            <button style="color: rgb(176, 176, 218);"  class="but" onclick="press('*')">X</button>
+            <button class="but" onclick="press('4')">4</button>
+            <button class="but" onclick="press('5')">5</button>
+            <button class="but" onclick="press('6')">6</button>
+            <button style="color: rgb(176, 176, 218);"  class="but" onclick="press('-')">-</button>
+            <button class="but" onclick="press('7')">7</button>
+            <button class="but" onclick="press('8')">8</button>
+            <button class="but" onclick="press('9')">9</button>
+            <button style="color: rgb(176, 176, 218);" class="but"  onclick="press('+')">+</button>
+            <button class="but" onclick="press('0')">0</button>
+            <button  style="color: rgb(176, 176, 218);" class="but" onclick="press('%')">%</button>
+            <button style="color: rgb(176, 176, 218);"  class="but" onclick="press('.')">.</button>
+            <button style="color: rgb(176, 176, 218);" class="but" onclick="calc()">=</button>
+
+
+
+
+            
+        </div>
+            
+        </div>
+        
+        <script src="app.js"></script>
+    </body>
+</html>
